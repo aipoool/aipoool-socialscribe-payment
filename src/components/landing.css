@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:200,300,400,500,600,700,800,200i,300i,400i,500i,600i,700i,800i&display=swap'); 
+@font-face { 
+  font-family:"Material Design Icons";
+  src:url("https://cdn.jsdelivr.net/npm/@mdi/font@4.8.95/fonts/materialdesignicons-webfont.eot?v=4.8.95");
+  src:url("https://cdn.jsdelivr.net/npm/@mdi/font@4.8.95/fonts/materialdesignicons-webfont.eot?#iefix&v=4.8.95") format("embedded-opentype"),url("https://cdn.jsdelivr.net/npm/@mdi/font@4.8.95/fonts/materialdesignicons-webfont.woff2?v=4.8.95") format("woff2"),url("https://cdn.jsdelivr.net/npm/@mdi/font@4.8.95/fonts/materialdesignicons-webfont.woff?v=4.8.95") format("woff"),url("https://cdn.jsdelivr.net/npm/@mdi/font@4.8.95/fonts/materialdesignicons-webfont.ttf?v=4.8.95") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+} 
+  body {  
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#212529;
+    text-align:left;
+  }  
+* { 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin: 0; 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    text-align: left; 
+    background-color: #fff;
+} 
+
+body { 
+    font-family: 'Karla', sans-serif;
+} 
+
+html { 
+    font-family: sans-serif; 
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+    -webkit-tap-highlight-color: transparent;
+} 
+
+:root { 
+    --wh-primary-500: hsl(161, 100%, 35%); 
+    --wh-secondary-50: hsl(218, 22%, 30%); 
+    --wh-secondary-100: hsl(218, 22%, 27%); 
+    --wh-secondary-200: hsl(218, 22%, 25%); 
+    --wh-secondary-300: hsl(218, 22%, 22%); 
+    --wh-secondary-400: hsl(218, 22%, 20%); 
+    --wh-secondary-500: hsl(218, 22%, 18%); 
+    --wh-secondary-600: hsl(218, 22%, 16%); 
+    --wh-secondary-700: hsl(218, 22%, 14%); 
+    --wh-secondary-800: hsl(218, 22%, 12%); 
+    --wh-secondary-900: hsl(218, 22%, 8%); 
+    --wh-red-600: #dc2626; 
+    --wh-red-700: #b91c1c; 
+    --wh-primary-color: var(--wh-primary-500); 
+    --wh-font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont,  'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',  'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+    --font-family: var(--wh-font-family); 
+    --wh-danger-color: var(--wh-red-600); 
+    --wh-danger-color-hover: var(--wh-red-700); 
+    --wh-bg-base: var(--wh-secondary-600); 
+    --wh-bg-base-hover: var(--wh-secondary-500); 
+    --wh-border-base: var(--wh-secondary-200); 
+    --wh-border-base-hover: var(--wh-secondary-100); 
+    --wh-border-base-strong: var(--wh-secondary-100); 
+    --wh-border-base-strong-hover: var(--wh-secondary-50); 
+    --wh-bg-base-hover-strong: var(--wh-secondary-300); 
+    --wh-bg-back: var(--wh-secondary-700); 
+    --wh-bg-back-strong: var(--wh-secondary-800); 
+    --wh-bg-back-strong-hover: var(--wh-secondary-900); 
+    --wh-bg-back-hover: var(--wh-secondary-600); 
+    --wh-bg-back-hover-strong: var(--wh-secondary-800); 
+    --wh-border-back: var(--wh-secondary-100); 
+    --wh-border-back-strong: var(--wh-secondary-50); 
+    --wh-bg-front: var(--wh-secondary-400); 
+    --wh-bg-front-strong: var(--wh-secondary-200); 
+    --wh-bg-front-strong-hover: var(--wh-secondary-100); 
+    --wh-bg-front-hover: var(--wh-secondary-300); 
+    --wh-bg-front-hover-strong: var(--wh-secondary-200); 
+    --wh-text-strong: rgba(255, 255, 255, 0.9); 
+    --wh-text-hover: var(--wh-text-strong); 
+    --wh-bg-tags: var(--wh-secondary-300); 
+    --wh-bg-tags-hover: var(--wh-secondary-200); 
+    --wh-fallback-img-color: var(--wh-secondary-600); 
+    --wh-shadow-primary: var(--wh-primary-500) 0px 0px 0px 1px inset,      var(--wh-primary-500) 0px 0px 1px;
+} 
+
+.container { 
+    width: 100%; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    margin-right: auto; 
+    margin-left: auto;
+} 
+
+@media (min-width: 576px){ 
+  .container { 
+    max-width: 540px;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  .container { 
+    max-width: 720px;
+  } 
+}     
+
+@media (min-width: 992px){ 
+  .container { 
+    max-width: 960px;
+  } 
+}     
+
+@media (min-width: 1200px){ 
+  .container { 
+    max-width: 1140px;
+  } 
+}     
+
+*,:after,:before { 
+    box-sizing: border-box;
+} 
+
+h5 { 
+    margin-top: 0; 
+    margin-bottom: .5rem;
+} 
+
+h5 { 
+    margin-bottom: .5rem; 
+    font-weight: 500; 
+    line-height: 1.2;
+} 
+
+h5 { 
+    font-size: 1.25rem;
+} 
+
+.text-center { 
+    text-align: center!important;
+} 
+
+.pricing-table-subtitle { 
+    margin-top: 68px; 
+    font-weight: normal;
+} 
+
+h1 { 
+    margin-top: 0; 
+    margin-bottom: .5rem;
+} 
+
+h1 { 
+    margin-bottom: .5rem; 
+    font-weight: 500; 
+    line-height: 1.2;
+} 
+
+h1 { 
+    font-size: 2.5rem;
+} 
+
+.pricing-table-title { 
+    font-weight: bold; 
+    margin-bottom: 68px;
+} 
+
+.row { 
+    display: -ms-flexbox; 
+    display: flex; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+    margin-right: -15px; 
+    margin-left: -15px;
+} 
+
+.col-md-4 { 
+    position: relative; 
+    width: 100%; 
+    padding-right: 15px; 
+    padding-left: 15px;
+} 
+
+@media (min-width: 768px){ 
+  .col-md-4 { 
+    -ms-flex: 0 0 33.333333%; 
+    flex: 0 0 33.333333%; 
+    max-width: 33.333333%;
+  } 
+}     
+
+.card { 
+    position: relative; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+    min-width: 0; 
+    word-wrap: break-word; 
+    background-color: #fff; 
+    background-clip: border-box; 
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+} 
+
+.pricing-card { 
+    border: none; 
+    border-radius: 10px; 
+    margin-bottom: 40px; 
+    text-align: center; 
+    -webkit-transition: all 0.6s; 
+    transition: all 0.6s;
+} 
+
+.pricing-card:hover { 
+    box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+} 
+
+.pricing-card:hover { 
+    box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55); 
+    -webkit-transform: translateY(-10px); 
+    transform: translateY(-10px);
+} 
+
+.pricing-card.pricing-card-highlighted { 
+    box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+} 
+
+.card-body { 
+    -ms-flex: 1 1 auto; 
+    flex: 1 1 auto; 
+    min-height: 1px; 
+    padding: 1.25rem;
+} 
+
+.pricing-card .card-body  { 
+    padding-top: 55px; 
+    padding-bottom: 62px;
+} 
+
+.pricing-plan-icon { 
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 40px; 
+    line-height: 1; 
+    margin-bottom: 24px;
+} 
+
+.pricing-plan-basic .pricing-plan-icon  { 
+    color: #fe397a;
+} 
+
+.mdi:before,.mdi-set { 
+    display: inline-block; 
+    font: normal normal normal 24px/1 "Material Design Icons"; 
+    font-size: inherit; 
+    text-rendering: auto; 
+    line-height: inherit; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+.mdi-cube-outline:before { 
+    content: "\F1A7";
+} 
+
+p { 
+    margin-top: 0; 
+    margin-bottom: 1rem;
+} 
+
+.pricing-plan-title { 
+    font-size: 20px; 
+    color: #000; 
+    margin-bottom: 11px; 
+    font-weight: normal;
+} 
+
+h3 { 
+    margin-top: 0; 
+    margin-bottom: .5rem;
+} 
+
+h3 { 
+    margin-bottom: .5rem; 
+    font-weight: 500; 
+    line-height: 1.2;
+} 
+
+h3 { 
+    font-size: 1.75rem;
+} 
+
+.ml-auto { 
+    margin-left: auto!important;
+} 
+
+.pricing-plan-cost { 
+    font-size: 50px; 
+    color: #000; 
+    font-weight: bold; 
+    margin-bottom: 29px;
+} 
+
+ul { 
+    margin-top: 0; 
+    margin-bottom: 1rem;
+} 
+
+.pricing-plan-features { 
+    list-style: none; 
+    padding-left: 0; 
+    font-size: 14px; 
+    line-height: 2.14; 
+    margin-bottom: 35px; 
+    color: #303132;
+} 
+
+a { 
+    color: #007bff; 
+    text-decoration: none; 
+    background-color: transparent;
+} 
+
+.btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    color: #212529; 
+    text-align: center; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    border-radius: .25rem; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.pricing-plan-purchase-btn { 
+    color: #000; 
+    font-size: 16px; 
+    font-weight: bold; 
+    width: 145px; 
+    height: 45px; 
+    border-radius: 22.5px; 
+    -webkit-transition: all 0.4s; 
+    transition: all 0.4s; 
+    position: relative; 
+    display: -webkit-box; 
+    display: flex; 
+    -webkit-box-align: center; 
+    align-items: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    -webkit-box-pack: center; 
+    justify-content: center;
+} 
+
+.pricing-plan-basic .pricing-plan-purchase-btn  { 
+    background-color: #fe397a; 
+    color: #fff;
+} 
+
+a:hover { 
+    color: #0056b3; 
+    text-decoration: underline;
+} 
+
+.btn:hover { 
+    color: #212529; 
+    text-decoration: none;
+} 
+
+.pricing-plan-basic .pricing-plan-purchase-btn:hover { 
+    box-shadow: 0 3px 0 0 #b7013d;
+} 
+
+.pricing-plan-pro .pricing-plan-icon  { 
+    color: #10bb87;
+} 
+
+.mdi-trophy:before { 
+    content: "\F538";
+} 
+
+.pricing-plan-pro .pricing-plan-purchase-btn  { 
+    background-color: #10bb87; 
+    color: #fff;
+} 
+
+.pricing-plan-pro .pricing-plan-purchase-btn:hover { 
+    box-shadow: 0 3px 0 0 #0a7554;
+} 
+
+.pricing-plan-enterprise .pricing-plan-icon  { 
+    color: #5d78ff;
+} 
+
+.mdi-wallet-giftcard:before { 
+    content: "\F585";
+} 
+
+.pricing-plan-enterprise .pricing-plan-purchase-btn  { 
+    background-color: #5d78ff; 
+    color: #fff;
+} 
+
+.pricing-plan-enterprise .pricing-plan-purchase-btn:hover { 
+    box-shadow: 0 3px 0 0 #1138ff;
+} 
+
+
